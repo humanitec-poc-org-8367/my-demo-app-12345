@@ -13,7 +13,15 @@ containers:
   frontend:
     variables:
       HELLO: WORLD
+      DATABASE_HOST: "${resources.db.host}"
 
 resources:
   dns: # We need a DNS record to point to the service 
     type: dns
+  db:
+    type: mysql
+    properties:
+      host:
+      port:
+      username:
+      password:
