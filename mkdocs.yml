@@ -1,0 +1,7 @@
+site_name: 'my-demo-app-12345 Docs'
+
+nav:
+  - Home: index.md
+
+plugins:
+  - techdocs-core
